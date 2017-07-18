@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DMLoadingView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loadingViewNOProduct" translatesAutoresizingMaskIntoConstraints="NO" id="eRb-8C-yjb">
+                    <rect key="frame" x="162.5" y="224" width="50" height="50"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NoH-ku-UCL">
+                    <rect key="frame" x="20" y="348.5" width="335" height="45"/>
+                    <color key="backgroundColor" red="0.27843137254901962" green="0.52549019607843139" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="3HZ-jy-VpV"/>
+                    </constraints>
+                    <state key="normal" title="去看看">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="refreshButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="pYG-dz-nQh"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你还没有浏览记录\n快去申请吧" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZE-bn-xwQ">
+                    <rect key="frame" x="74" y="294" width="227" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.43529411764705883" green="0.47450980392156861" blue="0.5607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="FRz-4q-05p">
+                    <rect key="frame" x="177" y="298.5" width="20" height="20"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在加载中..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVL-3E-LXd">
+                    <rect key="frame" x="139.5" y="338.5" width="95" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.43529411759999997" green="0.47450980390000003" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.66770434479224983" green="0.97680455446243286" blue="0.78254045501955449" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="FRz-4q-05p" firstAttribute="centerX" secondItem="GVL-3E-LXd" secondAttribute="centerX" id="9ER-p9-qDm"/>
+                <constraint firstItem="FRz-4q-05p" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="EQ0-kY-1Z1"/>
+                <constraint firstItem="NoH-ku-UCL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="UTq-ND-z74"/>
+                <constraint firstAttribute="trailing" secondItem="NoH-ku-UCL" secondAttribute="trailing" constant="20" id="YLl-3p-j3I"/>
+                <constraint firstItem="GVL-3E-LXd" firstAttribute="top" secondItem="FRz-4q-05p" secondAttribute="bottom" constant="20" id="cug-bQ-zh0"/>
+                <constraint firstItem="NoH-ku-UCL" firstAttribute="centerX" secondItem="eRb-8C-yjb" secondAttribute="centerX" id="gXf-zN-RH6"/>
+                <constraint firstItem="FRz-4q-05p" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-25" id="jtd-Kt-GlP"/>
+                <constraint firstItem="NoH-ku-UCL" firstAttribute="centerX" secondItem="iZE-bn-xwQ" secondAttribute="centerX" id="kmq-JN-KQn"/>
+                <constraint firstItem="NoH-ku-UCL" firstAttribute="top" secondItem="iZE-bn-xwQ" secondAttribute="bottom" constant="35" id="lms-GB-lnW"/>
+                <constraint firstItem="iZE-bn-xwQ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-30" id="vzg-mg-f5J"/>
+                <constraint firstItem="iZE-bn-xwQ" firstAttribute="top" secondItem="eRb-8C-yjb" secondAttribute="bottom" constant="20" id="ycA-t7-DcC"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="loadingActivityIndicatorView" destination="FRz-4q-05p" id="oRg-Vq-Xrb"/>
+                <outlet property="loadingLabel" destination="GVL-3E-LXd" id="eWz-tu-F0M"/>
+                <outlet property="refreshButton" destination="NoH-ku-UCL" id="QJP-oT-otm"/>
+                <outlet property="resultImageView" destination="eRb-8C-yjb" id="lWN-Jn-YhV"/>
+                <outlet property="resultLabel" destination="iZE-bn-xwQ" id="gri-dy-RII"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="loadingViewNOProduct" width="50" height="50"/>
+    </resources>
+</document>
