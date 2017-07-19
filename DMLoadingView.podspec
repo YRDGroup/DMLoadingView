@@ -13,4 +13,5 @@ Pod::Spec.new do |s|
       :tag => s.version.to_s
   }
   s.source_files = 'DMLoadingView/**/*.{c,h,m}'
+  s.dependency "SVProgressHUD"
 end
