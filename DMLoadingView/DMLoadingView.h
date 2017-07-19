@@ -20,8 +20,19 @@ typedef NS_ENUM(NSUInteger,kDMLoadingViewType) {
 @interface DMLoadingView : UIView
 
 
+
+/**
+ 隐藏loadingview
+
+ @param superView 父视图
+ */
 + (void)dismissFromSuperView:(UIView *)superView;
 
+/**
+ 展示加载中的loadingview
+
+ @param superView 父视图
+ */
 + (void)showLoadingWithSuperView:(UIView *)superView;
 + (void)loadingWithTitle:(NSString *)title superView:(UIView *)superView;
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85C65722A180F16AF7EDD858 /* libPods-DMLoadingViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF5C6E6BF5B344BDF0A6743 /* libPods-DMLoadingViewDemo.a */; };
 		EB60DD711F1DDD800092C0C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB60DD701F1DDD800092C0C1 /* main.m */; };
 		EB60DD741F1DDD800092C0C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB60DD731F1DDD800092C0C1 /* AppDelegate.m */; };
 		EB60DD771F1DDD800092C0C1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB60DD761F1DDD800092C0C1 /* ViewController.m */; };
@@ -16,9 +17,13 @@
 		EB60DD971F1E2AB10092C0C1 /* DMLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB60DD921F1E2AB10092C0C1 /* DMLoadingView.m */; };
 		EB60DD981F1E2AB10092C0C1 /* DMLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB60DD931F1E2AB10092C0C1 /* DMLoadingView.xib */; };
 		EB60DD991F1E2AB10092C0C1 /* UILabel+DMLineSpaceAndWordSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = EB60DD961F1E2AB10092C0C1 /* UILabel+DMLineSpaceAndWordSpace.m */; };
+		EB60DD9C1F1F034D0092C0C1 /* DMProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = EB60DD9B1F1F034D0092C0C1 /* DMProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2AF5C6E6BF5B344BDF0A6743 /* libPods-DMLoadingViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DMLoadingViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D9D4C1D19D78646B67EFDE5 /* Pods-DMLoadingViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMLoadingViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DMLoadingViewDemo/Pods-DMLoadingViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		7493FAAD2C91564ED10EFF9F /* Pods-DMLoadingViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMLoadingViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DMLoadingViewDemo/Pods-DMLoadingViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		EB60DD6C1F1DDD800092C0C1 /* DMLoadingViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMLoadingViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB60DD701F1DDD800092C0C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EB60DD721F1DDD800092C0C1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -34,6 +39,8 @@
 		EB60DD931F1E2AB10092C0C1 /* DMLoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DMLoadingView.xib; sourceTree = "<group>"; };
 		EB60DD951F1E2AB10092C0C1 /* UILabel+DMLineSpaceAndWordSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+DMLineSpaceAndWordSpace.h"; sourceTree = "<group>"; };
 		EB60DD961F1E2AB10092C0C1 /* UILabel+DMLineSpaceAndWordSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DMLineSpaceAndWordSpace.m"; sourceTree = "<group>"; };
+		EB60DD9A1F1F034D0092C0C1 /* DMProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMProgressHUD.h; sourceTree = "<group>"; };
+		EB60DD9B1F1F034D0092C0C1 /* DMProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +48,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85C65722A180F16AF7EDD858 /* libPods-DMLoadingViewDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B52803BAB56440CCC19061F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2AF5C6E6BF5B344BDF0A6743 /* libPods-DMLoadingViewDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF651AD7A4C2791867791FB3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D9D4C1D19D78646B67EFDE5 /* Pods-DMLoadingViewDemo.debug.xcconfig */,
+				7493FAAD2C91564ED10EFF9F /* Pods-DMLoadingViewDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EB60DD631F1DDD800092C0C1 = {
 			isa = PBXGroup;
 			children = (
 				EB60DD6E1F1DDD800092C0C1 /* DMLoadingViewDemo */,
 				EB60DD6D1F1DDD800092C0C1 /* Products */,
+				CF651AD7A4C2791867791FB3 /* Pods */,
+				5B52803BAB56440CCC19061F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,22 +118,16 @@
 		EB60DD901F1E2AB10092C0C1 /* DMLoadingView */ = {
 			isa = PBXGroup;
 			children = (
+				EB60DD9A1F1F034D0092C0C1 /* DMProgressHUD.h */,
+				EB60DD9B1F1F034D0092C0C1 /* DMProgressHUD.m */,
 				EB60DD911F1E2AB10092C0C1 /* DMLoadingView.h */,
 				EB60DD921F1E2AB10092C0C1 /* DMLoadingView.m */,
 				EB60DD931F1E2AB10092C0C1 /* DMLoadingView.xib */,
-				EB60DD941F1E2AB10092C0C1 /* sourceImages */,
 				EB60DD951F1E2AB10092C0C1 /* UILabel+DMLineSpaceAndWordSpace.h */,
 				EB60DD961F1E2AB10092C0C1 /* UILabel+DMLineSpaceAndWordSpace.m */,
 			);
 			name = DMLoadingView;
 			path = ../../DMLoadingView;
-			sourceTree = "<group>";
-		};
-		EB60DD941F1E2AB10092C0C1 /* sourceImages */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = sourceImages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,9 +137,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB60DD831F1DDD800092C0C1 /* Build configuration list for PBXNativeTarget "DMLoadingViewDemo" */;
 			buildPhases = (
+				7F26CF8502A88D6DED325EE6 /* [CP] Check Pods Manifest.lock */,
 				EB60DD681F1DDD800092C0C1 /* Sources */,
 				EB60DD691F1DDD800092C0C1 /* Frameworks */,
 				EB60DD6A1F1DDD800092C0C1 /* Resources */,
+				85B25B00EAE4EA46E5AC0A0E /* [CP] Embed Pods Frameworks */,
+				BB7F105DD086D2D5A5C5BFF6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -177,6 +201,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7F26CF8502A88D6DED325EE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		85B25B00EAE4EA46E5AC0A0E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DMLoadingViewDemo/Pods-DMLoadingViewDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB7F105DD086D2D5A5C5BFF6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DMLoadingViewDemo/Pods-DMLoadingViewDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EB60DD681F1DDD800092C0C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -187,6 +259,7 @@
 				EB60DD741F1DDD800092C0C1 /* AppDelegate.m in Sources */,
 				EB60DD991F1E2AB10092C0C1 /* UILabel+DMLineSpaceAndWordSpace.m in Sources */,
 				EB60DD711F1DDD800092C0C1 /* main.m in Sources */,
+				EB60DD9C1F1F034D0092C0C1 /* DMProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +377,7 @@
 		};
 		EB60DD841F1DDD800092C0C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D9D4C1D19D78646B67EFDE5 /* Pods-DMLoadingViewDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3AHZ82SGX3;
@@ -316,6 +390,7 @@
 		};
 		EB60DD851F1DDD800092C0C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7493FAAD2C91564ED10EFF9F /* Pods-DMLoadingViewDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3AHZ82SGX3;
@@ -345,6 +420,7 @@
 				EB60DD851F1DDD800092C0C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

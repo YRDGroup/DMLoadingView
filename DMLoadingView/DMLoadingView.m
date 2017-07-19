@@ -176,6 +176,9 @@
  */
 + (void)showWithTitle:(NSString *)title buttonTitle:(NSString *)buttonTitle imageString:(NSString *)imageString maskType:(kDMLoadingViewType)type  superView:(UIView *)superView pressedBlock:(DMLoadingViewButtonPressedBlock)buttonBlock
 {
+    //展示之前， 隐藏LoadingView
+    [DMLoadingView dismissFromSuperView:superView];
+    
     DMLoadingView *loadingView = [[DMLoadingView alloc]initWithFrame:superView.bounds];
     loadingView.buttonPressedBlock = buttonBlock;
     
