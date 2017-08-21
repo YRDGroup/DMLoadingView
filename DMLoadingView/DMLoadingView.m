@@ -260,7 +260,7 @@
 {
     for (UIView *subView in superView.subviews) {
         if ([subView isKindOfClass:[DMLoadingView class]]) {
-            [superView removeFromSuperview];
+            [subView removeFromSuperview];
         }
     }
 }
