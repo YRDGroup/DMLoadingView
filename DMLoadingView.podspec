@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'DMLoadingView'
-  s.version      = '1.0.2'
+  s.version      = '1.0.4'
   s.summary      = '拆分贷嘛工具类'
   s.homepage     = 'https://github.com/YRDGroup/DMLoadingView'
   s.license      = { :type => "MIT", :file => "LICENSE" }
@@ -13,5 +13,6 @@ Pod::Spec.new do |s|
       :tag => s.version.to_s
   }
   s.source_files = 'DMLoadingView/**/*.{c,h,m}'
+  s.resources    = ['DMLoadingView/**/*.{xib}']
   s.dependency "SVProgressHUD"
 end
